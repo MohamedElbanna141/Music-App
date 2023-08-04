@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&family=Ubuntu:wght@500;700&display=swap');
+/*All*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+    color: white;
+}
+.container {
+    height: 720px;
+    width: 100%;
+    background-image: url(media/b3.jpg);
+    background-size: cover;
+    display: flex;
+}
+.headerSec {
+    display: flex;
+}
+.headerSec img {
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    transform: translateY(-20px);
+}
+.headerSec h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    color: black;
+}
+.headerSec i {
+    color: black;
+    font-size: 40px;
+    margin-top: 40px;
+    transform: translateX(1100px);
+}
+.headerSec i:hover {
+    cursor: pointer;
+}
+#Progress_Status {
+    width: 550px;
+    background-color: #ddd;
+    transform: translateX(470px);
+    margin-top: 180px;
+    border-radius: 50px;
+}   
+#myprogressBar {
+    width: 4%;
+    height: 20px;
+    background-image: linear-gradient(to right,rgb(0, 85, 255 ) ,rgb(227, 47, 82) );
+    text-align: center;
+    line-height: 32px;
+    color: black;
+    transition: all 0.5s;
+    border-radius: 50px;
+}    
+.bodySec {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#previous {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red , rgb(0, 85, 255));
+    transform: translateX(400px);
+    margin-top: 80px;
+    display: block;
+}
+#previous i {
+    color: black;
+    font-size: 60px;
+    transform: translateX(40px);
+    margin-top: 25px;
+}
+#play img {
+    height: 90px;
+    width: 90px;
+    margin: 30px;
+    transform: translateX(20px);
+    margin-top: 40px;
+}
+#play {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red , rgb(0, 85, 255));
+    transform: translateX(500px);
+    margin-top: 80px;
+    display: block;
+}
+#pause {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red , rgb(0, 85, 255));
+    transform: translateX(500px);
+    margin-top: 80px;
+    display: none;
+}
+#pause img {
+    height: 90px;
+    width: 90px;
+    margin: 30px;
+    transform: translateX(13px);
+    margin-top: 40px;
+}
+#next {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red , rgb(0, 85, 255));
+    transform: translateX(600px);
+    margin-top: 80px;
+    display: block;
+}
+#next i {
+    color: black;
+    font-size: 60px;
+    /* margin: 30px; */
+    transform: translateX(40px);
+    margin-top: 25px;
+}
+#play:hover {
+    background-image: linear-gradient(to bottom, red , rgb(0, 85, 255));
+    cursor: pointer;
+    transition: 500s;
+}
+#pause:hover {
+    background-image: linear-gradient(to bottom, red , rgb(0, 85, 255));
+    cursor: pointer;
+    transition: 500s;
+}
+#previous:hover {
+    background-image: linear-gradient(to bottom, red , rgb(0, 85, 255));
+    cursor: pointer;
+    transition: 500s;
+}
+#next:hover {
+    background-image: linear-gradient(to bottom, red , rgb(0, 85, 255));
+    cursor: pointer;
+    transition: 500s;
+}
+#sideBar {
+    height: 600px;
+    width: 350px;
+    margin-top: 50px;
+    background-image: linear-gradient(to bottom,rgb(0, 85, 255 ) ,rgb(227, 47, 82) );
+    transform: translateX(575px);
+    border-radius: 10px;
+    display: none;
+}
+.sideTitle {
+    display: flex;
+    background-color: rgba(0, 255, 255, 0);
+    
+}
+.sideTitle h1 {
+    margin-left: 100px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.sideTitle i {
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 30px;
+}
+.sideTitle i:hover {
+    cursor: pointer;
+}
+.sideHeader {
+    display: flex;
+    height: 70px;
+}
+#sideBar h3 {
+    margin: 20px;
+}
+#sideBar h3:hover {
+    cursor: pointer;
+}
+#sideBar input {
+    height: 30px;
+    width: 220px;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    margin-top: 19px;
+    text-align: center;
+}
+.sideHeader i {
+    margin-top: 25px;
+    transform: translateX(-30px);
+}
+#add {
+    height: 120px;
+    width: 300px;
+    transform: translateX(30px);
+    display: none;
+}
+#add label {
+    font-weight:1000;
+}
+#add input {
+    width: 170px;
+    margin-left: 30px;
+    border: none;
+}
+#newSongFile {
+    transform: translateX(20px);
+    background-color: white;
+    font-size: 23px;
+}
+.subCan {
+    display: flex;
+    margin-top: 30px;
+    transform: translateX(20px);
+}
+.subCan h4 {
+    text-align: center;
+    padding-top: 10px;
+    transform: translateX(25px);
+    height: 40px;
+    width: 110px;
+}
+.subCan h4:hover {
+    font-size: 23px;
+    color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.music {
+    height: 430px;
+    width: 300px;
+    margin: 40px;
+    font-size: 20px;
+    overflow: auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track:hover {
+    box-shadow: inset 0 0 2px grey; 
+}
+::-webkit-scrollbar-thumb {
+    /* background: rgb(44, 181, 181);  */
+    background: white;
+    border-radius: 10px;
+}
+#musicList {
+    list-style: none;
+}
+#musicList li{
+    display: flex;
+    border-radius: 10px;
+    width: 265px;
+}
+#musicList li p {
+    margin: 10px;
+}
+#musicList li:hover {
+    /* background-color:aqua; */
+    border: 2px solid white;
+    cursor: pointer;
+}
+/* #musicList li p:hover {
+    color: black;
+} */

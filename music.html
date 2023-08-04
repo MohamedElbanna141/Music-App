@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gmayka</title>
+</head>
+<body>
+    <!-- The Music App -->
+    
+    <section class="container">
+        <section style="width: 500px;">
+            <div class="headerSec">
+                <img src="media/logo.png">
+                <h1>Gmayka</h1>
+                <i class="fa-solid fa-grip-lines" onclick="displaySide()"></i>
+            </div>
+            
+            <div id="Progress_Status">
+                <div id="myprogressBar"></div>
+            </div>
+            <div class="bodySec">
+                <audio src="" id="currentSong"></audio>
+                <div id="previous" onclick="previousSong()">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div id="play" onclick="playSong()">
+                    <img src="media/play.png">
+                </div>
+                <div id="pause">
+                    <img src="media/pause.png">
+                </div>
+                <div id="next" onclick="nextSong()">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+        </section>
+        <section id="sideBar">
+            <div>
+                <div class="sideTitle">
+                    <h1>My Playlist</h1>
+                    <i class="fa-solid fa-arrow-left-long fa-rotate-180" onclick="hideSide()"></i>
+                </div>
+                <div class="sideHeader">
+                    <h3 onclick="addSong()">ADD</h3>
+                    <input type="text" placeholder="SEARCH" id="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;" onclick="search()"></i>
+                </div>
+                <div id="add">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" placeholder="Name" id="newSongName">
+                    </div>
+                    <div>
+                        <label>File</label>
+                        <input type="file" id="newSongFile" placeholder="Choose The File">
+                    </div>
+                    <div class="subCan">
+                        <h4 onclick="submitSong()">SUBMIT</h4>
+                        <h4 onclick="hideAdd()">CANCEL</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="music">
+                <ul id="musicList">
+                    
+                </ul>
+            </div>
+        </section>
+        
+
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
